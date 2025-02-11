@@ -4,19 +4,179 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Login Form</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
+    <section class="registration-section">
+      <div class="logo">
+        <img src="./img/logo.png" width="100px" height="30px" alt="" />
+      </div>
+      <div class="left_content">
+        <div class="info">
+          <div class="webinar_info">
+            <img
+              src="./img/tags-1.png"
+              width="238px"
+              height="40px"
+              alt="tags-1"
+            />
+            <img
+              src="./img/tags-2.png"
+              width="230px"
+              height="40px"
+              alt="tags-2"
+            />
+          </div>
+          <h1>Навчіться створювати Excel-таблиці на pro-рівні</h1>
+          <p>
+            Опануйте функціонал Microsoft Excel, автоматизуйте свою роботу та
+            створюйте таблиці швидко і з задоволенням.
+          </p>
+        </div>
+      </div>
 
-    <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
-    </main>
+      <div class="registration-form desktop-form" id="form-container">
+        <h2>Реєструйся просто зараз</h2>
+        <div class="countdown" id="desktop-countdown">
+          <span id="desktop-days">00</span>
+          <span class="separator">:</span>
+          <span id="desktop-hours">00</span>
+          <span class="separator">:</span>
+          <span id="desktop-minutes">00</span>
+          <span class="separator">:</span>
+          <span id="desktop-seconds">00</span>
+        </div>
+        <div class="countdown-labels">
+          <span>днів</span>
+          <span>годин</span>
+          <span>хвилин</span>
+          <span>секунд</span>
+        </div>
+        <form class="input-wrap" id="register-form">
+          <input type="text" id="name" placeholder="Введи своє ім’я" required />
+          <input
+            type="email"
+            id="email"
+            placeholder="Введи свій E-mail"
+            required
+          />
+          <input
+            type="tel"
+            id="phone"
+            placeholder="+380 95 --- -- --"
+            required
+          />
+          <div class="checkbox">
+            <input type="checkbox" id="terms" required />
+            <label for="terms"
+              >Згоден з <a href="#">Політикою конфіденційності</a> та
+              <a href="#">Умовами користування</a></label
+            >
+          </div>
+          <button class="btn-regestr" type="submit">Зареєструватися</button>
+        </form>
+      </div>
 
-    <load src="./partials/footer.html" />
+      <div class="tel-reg-form">
+        <h2>Реєструйся просто зараз</h2>
+        <div class="countdown" id="mobile-countdown">
+          <span id="mobile-days">00</span>
+          <span class="separator">:</span>
+          <span id="mobile-hours">00</span>
+          <span class="separator">:</span>
+          <span id="mobile-minutes">00</span>
+          <span class="separator">:</span>
+          <span id="mobile-seconds">00</span>
+        </div>
+        <div class="countdown-labels">
+          <span>днів</span>
+          <span>годин</span>
+          <span>хвилин</span>
+          <span>секунд</span>
+        </div>
+
+        <button class="btn-regestr" onclick="openModal()" type="button">
+          Зареєструватися
+        </button>
+      </div>
+    </section>
+
+    <!-- Modal (for Mobile) -->
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <div class="header-modal">
+          <img src="./img/logo.png" width="100px" height="30px" alt="" />
+          <span class="close-btn" id="close-modal" onclick="closeModal()"
+            ><svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M24.7071 8.70711C25.0976 8.31658 25.0976 7.68342 24.7071 7.29289C24.3166 6.90237 23.6834 6.90237 23.2929 7.29289L16 14.5858L8.70711 7.29289C8.31658 6.90237 7.68342 6.90237 7.29289 7.29289C6.90237 7.68342 6.90237 8.31658 7.29289 8.70711L14.5858 16L7.29289 23.2929C6.90237 23.6834 6.90237 24.3166 7.29289 24.7071C7.68342 25.0976 8.31658 25.0976 8.70711 24.7071L16 17.4142L23.2929 24.7071C23.6834 25.0976 24.3166 25.0976 24.7071 24.7071C25.0976 24.3166 25.0976 23.6834 24.7071 23.2929L17.4142 16L24.7071 8.70711Z"
+                fill="#010101"
+              />
+            </svg>
+          </span>
+        </div>
+        <div class="main-content">
+          <h2>Реєструйся просто зараз</h2>
+          <div class="countdown" id="modal-countdown">
+            <span id="modal-days">00</span>
+            <span class="separator">:</span>
+            <span id="modal-hours">00</span>
+            <span class="separator">:</span>
+            <span id="modal-minutes">00</span>
+            <span class="separator">:</span>
+            <span id="modal-seconds">00</span>
+          </div>
+          <div class="countdown-label">
+            <span>днів</span>
+            <span>годин</span>
+            <span>хвилин</span>
+            <span>секунд</span>
+          </div>
+
+          <form class="modal-register-form input-wrap" id="modal-register-form">
+            <input
+              type="text"
+              id="modal-name"
+              placeholder="Введіть своє ім'я"
+              required
+            />
+            <input
+              type="email"
+              id="modal-email"
+              placeholder="Введіть свій E-mail"
+              required
+            />
+            <input
+              type="tel"
+              id="modal-phone"
+              placeholder="+380 XX XXX XX XX"
+              required
+            />
+            <label class="checkbox">
+              <input type="checkbox" id="modal-terms" required />
+              <span
+                >Згоден з <a href="#">Політика конфіденційності</a> та
+                <a href="#">Умови користування</a>.</span
+              >
+            </label>
+            <button type="submit">Зареєструватися</button>
+          </form>
+        </div>
+      </div>
+    </div>
 
     <script type="module" src="./main.js"></script>
   </body>
