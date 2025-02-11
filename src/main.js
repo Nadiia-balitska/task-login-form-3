@@ -42,24 +42,6 @@ document.addEventListener('DOMContentLoaded', function () {
   startCountdown('modal-');
 });
 
-// Modal Handling
-function openModal() {
-  document.getElementById('modal').style.display = 'block';
-  document.body.classList.add('no-scroll');
-}
-
-function closeModal() {
-  document.getElementById('modal').style.display = 'none';
-  document.body.classList.remove('no-scroll');
-}
-
-window.onclick = function (event) {
-  let modal = document.getElementById('modal');
-  if (event.target === modal) {
-    closeModal();
-  }
-};
-
 // Form Submission
 function handleFormSubmit(event) {
   event.preventDefault();
