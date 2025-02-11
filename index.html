@@ -2,127 +2,182 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/task-login-form-3/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Login Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <script type="module" crossorigin src="/task-login-form-3/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/task-login-form-3/assets/styles-DvPDDfy5.css">
+    <link rel="stylesheet" crossorigin href="/task-login-form-3/assets/index-B78YOWB4.css">
   </head>
   <body>
-    <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="/task-login-form-3/assets/sprite-E8vg0sBb.svg#logo"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
+    <section class="registration-section">
+      <div class="logo">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAeCAYAAADaW7vzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALZSURBVHgB7VqLcdswDIV0HcDdQJ2g7gRVJ4gyQTSCu0E6gZoJ4kwQd4LKE9SdwNqgmsAuYEMugxMdkG4SQad3x5MJEfyBeCApJ0mS7MEQ9vv9V3x815a3Nr7EWocJaJRP+NhoylobXwoGgZP8iI8MRgiTHsLYsKecxeQhr4c5pgpGBssGodW/wMcCRgTLlHXCuSA/UdYbYExBPtZDfuCqXMLTVZmlaVqi/DOcn5w169aObI66BcpvIB69QT5yfA3W9aXLcN9O8Qp/f9BWhO3TmelKW/7Q4YC0hWMwPYeMVqxHN1fobgP7dErQE+Qj69qKakrRTgiWIW2HUFa3ajaKcg8e3Vqhqz70SYwhyL/TFuQri8YRzTAVcKQnmsAVy2mV3wvdb0KXkLMuyWtH3mL5655VqgLqVahfQ6RRlbh1frfw9ConB4cJsD8fIQRKV6qFWh+1HCjJI5eoespkol+rWOpy67tA30UZUPb2gn7rKAtX3Eo2ygNusZIHTmsK6vSkPLBH9BizZGpx0edVss0QHOIYGISWsho347hhu9vtSo8OBbMM3/8W8sJTXm4WargMJk/yseeQ9xCP1iOfPZMPBnpsAsagNUjmZgSdZJxmGl3wB9u1yF9qkA16p7kdl8ogSD3yYEO7igb+BXcKbJVH96ZHVxqFdlalkMl8CGj7fA0GoY0hORw5uZvI7lxB8gyONLT06NJKL933fNYokVJyXMXdlrlxdLIeQ6rBxmjAIgK2ZL8gjEbcbesfCLtreozeNqbpInJ8dra9jDkq/FRMLBmtEjQ3C9C9x7IFRAD17tDj1N/bh4iErAJhaDmo01mD6IboKuNUMNV4PYkvFkm3dsREh1d8PokN5v/zcpHGeOfUQdv8QlmWLldziEQS2eGhoYtpjXxhbXyjMMj0gWpAwAmnS8+XvEh8VVj/pm4+iEtYpqzpb0ADgtmT+HMw6SHTX0kHhLEFcYm/q3XT27axA4MAAAAASUVORK5CYII=" width="100px" height="30px" alt="" />
+      </div>
+      <div class="left_content">
+        <div class="info">
+          <div class="webinar_info">
+            <img
+              src="data:image/png;base64,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"
+              width="238px"
+              height="40px"
+              alt="tags-1"
+            />
+            <img
+              src="data:image/png;base64,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"
+              width="230px"
+              height="40px"
+              alt="tags-2"
+            />
+          </div>
+          <h1>Навчіться створювати Excel-таблиці на pro-рівні</h1>
+          <p>
+            Опануйте функціонал Microsoft Excel, автоматизуйте свою роботу та
+            створюйте таблиці швидко і з задоволенням.
+          </p>
+        </div>
+      </div>
 
+      <div class="registration-form desktop-form" id="form-container">
+        <h2>Реєструйся просто зараз</h2>
+        <div class="countdown" id="desktop-countdown">
+          <span id="desktop-days">00</span>
+          <span class="separator">:</span>
+          <span id="desktop-hours">00</span>
+          <span class="separator">:</span>
+          <span id="desktop-minutes">00</span>
+          <span class="separator">:</span>
+          <span id="desktop-seconds">00</span>
+        </div>
+        <div class="countdown-labels">
+          <span>днів</span>
+          <span>годин</span>
+          <span>хвилин</span>
+          <span>секунд</span>
+        </div>
+        <form class="input-wrap" id="register-form">
+          <input type="text" id="name" placeholder="Введи своє ім’я" required />
+          <input
+            type="email"
+            id="email"
+            placeholder="Введи свій E-mail"
+            required
+          />
+          <input
+            type="tel"
+            id="phone"
+            placeholder="+380 95 --- -- --"
+            required
+          />
+          <div class="checkbox">
+            <input type="checkbox" id="terms" required />
+            <label for="terms"
+              >Згоден з <a href="#">Політикою конфіденційності</a> та
+              <a href="#">Умовами користування</a></label
+            >
+          </div>
+          <button class="btn-regestr" type="submit">Зареєструватися</button>
+        </form>
+      </div>
 
-    <main>
-      <!-- Loads the specified .html file -->
-      <section class="vite-promo">
-  <div class="container">
-    <div class="vite-promo-thumb">
-      <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
-      >
-        <!-- Path to images as from index.html file -->
-        <img
-          class="pic"
-          src="/task-login-form-3/assets/vite-logo-9o_aqrTe.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
-        />
-      </a>
+      <div class="tel-reg-form">
+        <h2>Реєструйся просто зараз</h2>
+        <div class="countdown" id="mobile-countdown">
+          <span id="mobile-days">00</span>
+          <span class="separator">:</span>
+          <span id="mobile-hours">00</span>
+          <span class="separator">:</span>
+          <span id="mobile-minutes">00</span>
+          <span class="separator">:</span>
+          <span id="mobile-seconds">00</span>
+        </div>
+        <div class="countdown-labels">
+          <span>днів</span>
+          <span>годин</span>
+          <span>хвилин</span>
+          <span>секунд</span>
+        </div>
+
+        <button class="btn-regestr" onclick="openModal()" type="button">
+          Зареєструватися
+        </button>
+      </div>
+    </section>
+
+    <!-- Modal (for Mobile) -->
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <div class="header-modal">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAeCAYAAADaW7vzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALZSURBVHgB7VqLcdswDIV0HcDdQJ2g7gRVJ4gyQTSCu0E6gZoJ4kwQd4LKE9SdwNqgmsAuYEMugxMdkG4SQad3x5MJEfyBeCApJ0mS7MEQ9vv9V3x815a3Nr7EWocJaJRP+NhoylobXwoGgZP8iI8MRgiTHsLYsKecxeQhr4c5pgpGBssGodW/wMcCRgTLlHXCuSA/UdYbYExBPtZDfuCqXMLTVZmlaVqi/DOcn5w169aObI66BcpvIB69QT5yfA3W9aXLcN9O8Qp/f9BWhO3TmelKW/7Q4YC0hWMwPYeMVqxHN1fobgP7dErQE+Qj69qKakrRTgiWIW2HUFa3ajaKcg8e3Vqhqz70SYwhyL/TFuQri8YRzTAVcKQnmsAVy2mV3wvdb0KXkLMuyWtH3mL5655VqgLqVahfQ6RRlbh1frfw9ConB4cJsD8fIQRKV6qFWh+1HCjJI5eoespkol+rWOpy67tA30UZUPb2gn7rKAtX3Eo2ygNusZIHTmsK6vSkPLBH9BizZGpx0edVss0QHOIYGISWsho347hhu9vtSo8OBbMM3/8W8sJTXm4WargMJk/yseeQ9xCP1iOfPZMPBnpsAsagNUjmZgSdZJxmGl3wB9u1yF9qkA16p7kdl8ogSD3yYEO7igb+BXcKbJVH96ZHVxqFdlalkMl8CGj7fA0GoY0hORw5uZvI7lxB8gyONLT06NJKL933fNYokVJyXMXdlrlxdLIeQ6rBxmjAIgK2ZL8gjEbcbesfCLtreozeNqbpInJ8dra9jDkq/FRMLBmtEjQ3C9C9x7IFRAD17tDj1N/bh4iErAJhaDmo01mD6IboKuNUMNV4PYkvFkm3dsREh1d8PokN5v/zcpHGeOfUQdv8QlmWLldziEQS2eGhoYtpjXxhbXyjMMj0gWpAwAmnS8+XvEh8VVj/pm4+iEtYpqzpb0ADgtmT+HMw6SHTX0kHhLEFcYm/q3XT27axA4MAAAAASUVORK5CYII=" width="100px" height="30px" alt="" />
+          <span class="close-btn" id="close-modal" onclick="closeModal()"
+            ><svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M24.7071 8.70711C25.0976 8.31658 25.0976 7.68342 24.7071 7.29289C24.3166 6.90237 23.6834 6.90237 23.2929 7.29289L16 14.5858L8.70711 7.29289C8.31658 6.90237 7.68342 6.90237 7.29289 7.29289C6.90237 7.68342 6.90237 8.31658 7.29289 8.70711L14.5858 16L7.29289 23.2929C6.90237 23.6834 6.90237 24.3166 7.29289 24.7071C7.68342 25.0976 8.31658 25.0976 8.70711 24.7071L16 17.4142L23.2929 24.7071C23.6834 25.0976 24.3166 25.0976 24.7071 24.7071C25.0976 24.3166 25.0976 23.6834 24.7071 23.2929L17.4142 16L24.7071 8.70711Z"
+                fill="#010101"
+              />
+            </svg>
+          </span>
+        </div>
+        <div class="main-content">
+          <h2>Реєструйся просто зараз</h2>
+          <div class="countdown" id="modal-countdown">
+            <span id="modal-days">00</span>
+            <span class="separator">:</span>
+            <span id="modal-hours">00</span>
+            <span class="separator">:</span>
+            <span id="modal-minutes">00</span>
+            <span class="separator">:</span>
+            <span id="modal-seconds">00</span>
+          </div>
+          <div class="countdown-label">
+            <span>днів</span>
+            <span>годин</span>
+            <span>хвилин</span>
+            <span>секунд</span>
+          </div>
+
+          <form class="modal-register-form input-wrap" id="modal-register-form">
+            <input
+              type="text"
+              id="modal-name"
+              placeholder="Введіть своє ім'я"
+              required
+            />
+            <input
+              type="email"
+              id="modal-email"
+              placeholder="Введіть свій E-mail"
+              required
+            />
+            <input
+              type="tel"
+              id="modal-phone"
+              placeholder="+380 XX XXX XX XX"
+              required
+            />
+            <label class="checkbox">
+              <input type="checkbox" id="modal-terms" required />
+              <span
+                >Згоден з <a href="#">Політика конфіденційності</a> та
+                <a href="#">Умови користування</a>.</span
+              >
+            </label>
+            <button type="submit">Зареєструватися</button>
+          </form>
+        </div>
+      </div>
     </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
-    </h1>
-  </div>
-</section>
-
-      <article class="badges">
-  <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-html-inject"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HTML Inject
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-full-reload"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Full Reload
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/postcss-sort-media-queries"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sort Media Queries
-        </a>
-      </li>
-    </ul>
-  </div>
-</article>
-
-    </main>
-
-    <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
-  </div>
-</footer>
-
 
   </body>
 </html>
