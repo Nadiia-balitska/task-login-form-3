@@ -18,3 +18,5 @@ window.onclick = function (event) {
 
 window.openModal = openModal;
 window.closeModal = closeModal;
+
+console.log('✅ modal.js завантажено успішно!');
