@@ -195,6 +195,15 @@ button {
   display: none;
 }
 
+.no-scroll {
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
 /* Tablet screen */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .registration-section {
