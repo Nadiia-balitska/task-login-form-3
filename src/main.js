@@ -1,5 +1,3 @@
-import './modal.js';
-
 // Countdown Timer
 document.addEventListener('DOMContentLoaded', function () {
   function startCountdown(targetId) {
