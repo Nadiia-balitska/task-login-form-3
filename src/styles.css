@@ -84,8 +84,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* width: auto; */
-  /* height: 50px; */
   background: white;
   color: black;
   gap: 35px;
