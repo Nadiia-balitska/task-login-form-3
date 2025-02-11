@@ -1,13 +1,13 @@
 // Modal Handling
-function openModal() {
+window.openModal = function () {
   document.getElementById('modal').style.display = 'block';
   document.body.classList.add('no-scroll');
-}
+};
 
-function closeModal() {
+window.closeModal = function () {
   document.getElementById('modal').style.display = 'none';
   document.body.classList.remove('no-scroll');
-}
+};
 
 window.onclick = function (event) {
   let modal = document.getElementById('modal');
@@ -15,6 +15,3 @@ window.onclick = function (event) {
     closeModal();
   }
 };
-
-window.openModal = openModal;
-window.closeModal = closeModal;
